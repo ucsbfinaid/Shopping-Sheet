@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Shopping Sheet</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <div id="container">
+        
+        <div id="header" class="pane">
+            <span class="date">MM / DD / YYYY</span>
+
+            <div class="title-wrapper">
+                <img class="logo" src="images/logo.png" alt="University of the United States (UUS) Logo" />
+                <h1>University of the United States (UUS)</h1>
+                <span class="name">Student Name, Identifier</span>
+            </div>
+
+            <a id="download-xml" class="download-btn" href="#">Download</a>
+        </div>
+
+        <div id="main">
+
+            <div class="pane">
+                <h2>Costs in the 2014-15 year</h2>
+                <div class="inner-pane">
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Estimated Cost of Attendance</th>
+                                <th class="amount">$<span id="value-total-estimated-cost">X,XXX</span> <span class="over-time">/ yr</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="amount-title">Tuition and fees</span></td>
+                                <td class="amount"><span class="sign">$</span><span id="value-tuition-and-fees">X,XXX</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="amount-title">Housing and meals</span></td>
+                                <td class="amount"><span id="value-housing-and-meals">X,XXX</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="amount-title">Books and supplies</span></td>
+                                <td class="amount"><span id="value-books-and-supplies">X,XXX</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="amount-title">Transportation</span></td>
+                                <td class="amount"><span id="value-transportation">X,XXX</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="amount-title">Other education costs</span></td>
+                                <td class="amount"><span id="value-other-education-costs">X,XXX</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="pane">
+                <h2>Grants and scholarships to pay for college</h2>
+                <div class="inner-pane">
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Total Grants and Scholarships
+                                    <span class="desc">("Gift" Aid; no repayment needed)</span>
+                                </th>
+                                <th class="amount">$<span id="value-total-grants-and-scholarships">X,XXX</span> <span class="over-time">/ yr</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="amount-title">Grants and scholarships from your school</span></td>
+                                <td class="amount"><span class="sign">$</span><span id="value-grants">X,XXX</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="amount-title">Federal Pell Grant</span></td>
+                                <td class="amount"><span id="value-federal-pell-grant">X,XXX</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="amount-title">Grants from your state</span></td>
+                                <td class="amount"><span id="value-grants-from-state">X,XXX</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="amount-title">Other scholarships you can use</span></td>
+                                <td class="amount"><span id="value-other-scholarships">X,XXX</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="pane highlight">
+                <h2>What will you pay for college</h2>
+                <div class="inner-pane">
+                
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="amount-title">Net Costs</span>
+                                    <span class="desc">(Cost of attendance minus total grants and scholarships)</span>
+                                </td>
+                                <td class="amount">$<span id="value-net-costs">X,XXX</span> <span class="over-time">/ yr</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <h2>Options to pay net costs</h2>
+
+            <div class="pane">
+                <h3>Work options</h3>
+                <div class="inner-pane">
+                
+                    <table class="list">
+                        <tbody>
+                            <tr>
+                                <td><span class="amount-title">Work-study (Federal, state, or institutional)</span></td>
+                                <td class="amount"><span class="sign">$</span><span id="value-work-study">X,XXX</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="pane">
+                <h3>Loan Options*</h3>
+                <div class="inner-pane">
+                
+                    <table class="list">
+                        <tbody>
+                            <tr>
+                                <td><span class="amount-title">Federal Perkins Loan</span></td>
+                                <td class="amount"><span class="sign">$</span><span id="value-federal-perkins-loan">X,XXX</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="amount-title">Federal Direct Subsidized Loan</span></td>
+                                <td class="amount"><span id="value-federal-direct-subsidized-loan">X,XXX</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="amount-title">Federal Direct Unsubsidized Loan</span></td>
+                                <td class="amount"><span id="value-federal-direct-unsubsidized-loan">X,XXX</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="footnote">
+                        *Recommended amounts shown here. You may be eligible for a different amount.
+                        Contact your financial aid office.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="pane highlight efc-summary">
+                <h2>Other options</h2>
+                <div class="inner-pane">
+                
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="amount-title">Family Contribution</span>
+                                    <span class="desc">(As calculated by the institution using information reported on the FAFSA or to your institution.)</span>
+                                </td>
+                                <td class="amount">$<span id="value-family-contribution">X,XXX</span> <span class="over-time">/ yr</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <ul class="option-list">
+                        <li>Payment plan offered by the institution</li>
+                        <li>Military and/or National Service benefits</li>
+                        <li>Parent or Graduate PLUS Loans</li>
+                        <li>Non-Federal private education loan</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="sidebar-wrapper">
+
+            <div id="sidebar" class="pane">
+
+                <div class="sidebar-info-wrapper info-grad-rate">
+                    <div class="sidebar-info">
+
+                        <div class="sidebar-content">
+                            <h2>Graduation Rate</h2>
+
+                            <p>
+                                Percentage of full-time students who graduate within 6 years
+                            </p>
+                        </div>
+
+                        <div class="scale">
+                            <span class="percentage">71%</span>
+                            <ol class="scale">
+                                <li class="first">Low</li>
+                                <li>Medium</li>
+                                <li class="last">High</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sidebar-info-wrapper info-loan-rate">
+                    <div class="sidebar-info">
+
+                        <div class="sidebar-content">
+                            <h2>Loan Default Rate</h2>
+
+                            <p>
+                                Percentage of borrowers entering repayment and defaulting on their loan
+                            </p>
+                        </div>
+
+                        <div class="bar-chart-wrapper">
+                                
+                            <div class="bar-chart bar-chart-institution">
+                                <span class="percentage">8%</span>
+                                <span class="bar"></span>
+                                <span class="title">This institution</span>
+                            </div>
+
+                            <div class="bar-chart bar-chart-national">
+                                <span class="percentage">9.8%</span>
+                                <span class="bar"></span>
+                                <span class="title">National</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sidebar-info-wrapper info-median-borrowing">
+                    <div class="sidebar-info">
+            
+                        <div class="sidebar-content">
+                            <h2>Median Borrowing</h2>
+
+                            <p>
+                                Students who borrow at UUS typically take out $X,XXX in Federal
+								loans for their undergraduate study. The Federal loan payment over
+								10 years for this amount is approximately
+                                $X.XXX per month. Your borrowing may be different.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="pane info-pane">
+
+                <h2>Repaying your loans</h2>
+
+                <p>
+                    To learn about loan repayment choices and work out your Federal Loan monthly payment,
+                    go to: <a href="http://studentaid.ed.gov/repay-loans/understand/plans">http://studentaid.ed.gov/repay-loans/understand/plans</a> 
+                </p>
+
+            </div>
+
+            <div class="pane info-pane address">
+
+                <h2>For more information and next steps:</h2>
+
+                <p class="address-title">
+                    University of the United States (UUS)<br />
+                    Financial Aid Office
+                </p>
+
+                <p>
+                    123 Main Street
+                    Anytown, ST 12345
+                    Telephone: (123) 456-7890
+                    E-mail: financialaid@uus.edu
+                </p>
+
+            </div>
+            
+        </div>
+
+        <div class="footer">
+
+            <div class="pane info-pane">
+                Customized information from UUS
+            </div>
+
+        </div>
+		
+		<div class="pane">
+			<h3>Glossary</h3>
+			<div class="inner-pane">
+                
+				<dl>
+					<dt>Cost of Attendance (COA):</dt>
+					<dd>
+						The total amount (not including grants and scholarships) that it will cost
+						you to go to school during the 2014–15 school year. COA includes tuition
+						and fees; housing and meals; and allowances for books, supplies,
+						transportation, loan fees, and dependent care. It also includes
+						miscellaneous and personal expenses, such as an allowance for the rental
+						or purchase of a personal computer; costs related to a disability; and
+						reasonable costs for eligible study-abroad programs. For students
+						attending less than half-time, the COA includes tuition and fees; an
+						allowance for books, supplies, and transportation; and dependent care
+						expenses.
+					</dd>
+					<dt>Total Grants and Scholarships:</dt>
+					<dd>
+						Student aid funds that do not have to be repaid. Grants are often
+						need-based, while scholarships are usually merit-based. Occasionally you
+						might have to pay back part or all of a grant if, for example, you
+						withdraw from school before finishing a semester.
+					</dd>
+					<dt>Net Costs:</dt>
+					<dd>
+						An estimate of the actual costs that you or your family will need to pay
+						during the 2014–15 school year to cover education expenses at a particular
+						school. Net costs are determined by taking the institution's cost of
+						attendance and subtracting your grants and scholarships.
+					</dd>
+					<dt>Work-Study:</dt>
+					<dd>
+						A federal student aid program that provides part-time employment while you
+						are enrolled in school to help pay your education expenses.
+					</dd>
+					<dt>Loans:</dt>
+					<dd>
+						Borrowed money that must be repaid with interest. Loans from the federal
+						government typically have a lower interest rate than loans from private
+						lenders. Federal loans, listed from most advantageous to least
+						advantageous, are called Federal Perkins Loans, Direct Subsidized Loans,
+						Direct Unsubsidized Loans, and Direct PLUS Loans. You can find more
+						information about federal loans at StudentAid.gov.
+					</dd>
+					<dt>Family Contribution (also referred to as Expected Family Contribution):</dt>
+					<dd>
+						A number used by a school to calculate how much financial aid you are
+						eligible to receive, if any. It's based on the financial information you
+						provided in your Free Application for Federal Student Aid (FAFSA). It's
+						not the amount of money your family will have to pay for college, nor is
+						it the amount of federal student aid you will receive. The family
+						contribution is reported to you on your Student Aid Report, also known as
+						the SAR.
+					</dd>
+					<dt>Graduation Rate:</dt>
+					<dd>
+						The percentage of students who graduate from an institution. This shows
+						students who began their studies as first-time, full-time degree- or
+						certificate-seeking students and completed their degree or certificate
+						within 150 percent of "normal time." For example, for a four-year school,
+						the graduation rate would be the percentage of students who completed that
+						program within six years or less.
+					</dd>
+					<dt>Loan Default Rate:</dt>
+					<dd>
+						The percentage of student borrowers&mdash;undergraduate and graduate&mdash;who
+						have failed to repay their federal loans within three years of leaving a
+						particular school. A low loan default rate could mean that the
+						institution's students are earning enough income after leaving school to
+						successfully repay their loans.
+					</dd>
+					<dt>Median Borrowing:</dt>
+					<dd>
+						The amount in federal loans the typical undergraduate student takes out at
+						a particular institution. It also indicates the monthly payments that an
+						average student would pay on that amount using a 10-year repayment plan.
+					</dd>
+				</dl>
+			</div>
+		</div>
+		
+        <div class="footer">
+
+            <div class="pane info-pane">
+                Customized information from UUS
+            </div>
+
+        </div>
+
+        <div class="modal" id="modal-download-xml">
+            <div class="header">
+                <h2>XML Output</h2>
+                <a id="close-output-xml" class="close" href="#">X</a>
+            </div>
+            <textarea id="xml-output"></textarea>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>

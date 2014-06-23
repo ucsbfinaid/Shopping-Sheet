@@ -1,0 +1,697 @@
+/* =CUSTOMIZE
+------------------------------------------------------- */
+
+/* Graduation Rate Percentage */
+.scale .percentage
+{
+    /* Max Value: 164px; */
+    margin-left: 125px;
+}
+
+/* Loan Default Rate Bar Chart: Institution */
+.bar-chart-institution
+{
+    padding-top: 12px;
+}
+
+.bar-chart-institution .bar
+{
+    height: 50px;
+}
+
+/* Loan Default Rate Bar Chart: National */
+.bar-chart-national
+{
+    padding-top: 0;
+}
+
+.bar-chart-national .bar
+{
+    height: 60px;
+}
+
+/* =RESET
+------------------------------------------------------- */
+
+html, body, h1, table, ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* =CLEARFIXES
+------------------------------------------------------- */
+
+.pane, .option-list, .sidebar-info, .scale, .modal .header
+{
+    overflow: auto;
+}
+
+/* =GLOBAL
+------------------------------------------------------- */
+
+html, body
+{
+    font-family: Arial, sans-serif;
+}
+
+a
+{
+    color: #000;
+}
+
+p
+{
+    margin: 0.5em 0;
+}
+
+/* =STRUCTURE
+------------------------------------------------------- */
+
+#container
+{
+    font-size: 0.6875em;
+    margin: 8px auto;
+    overflow: auto;
+    position: relative;
+    width: 800px;
+}
+
+#main
+{
+    float: left;
+    width: 557px;
+}
+
+.footer
+{
+   clear: both;
+   margin-bottom: 20px;
+   zoom: 1; /* IE hasLayout bug fix */
+}
+
+/* =HEADER
+------------------------------------------------------- */
+
+.title-wrapper
+{
+    margin: 16px 0 0 17px;
+}
+
+h1
+{
+    font-size: 1.636363636363636em;
+    font-weight: normal;
+    margin-bottom: 4px;
+    padding: 16px 0 0 0;
+}
+
+.logo
+{
+    float: left;
+    margin: 0 9px 0 0;
+}
+
+.name
+{
+    font-weight: bold;
+}
+
+.date
+{
+    float: right;
+    font-size: 0.8181818181818182em;
+    font-weight: bold;
+    margin: 8px 9px 0 0;
+}
+
+.download-btn
+{
+    background: #FFF url(../images/download.gif) no-repeat 7px 4px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #555;
+    display: block;
+    float: right;
+    font-weight: bold;
+    line-height: 1.1em;
+    margin: 0 9px 4px 0;
+    padding: 4px 6px 5px 27px;
+    text-decoration: none;
+}
+
+.download-btn:hover
+{
+    background-image: url(../images/download_hover.gif);
+    color: #D07236;
+}
+
+#download-xml
+{
+    visibility: hidden;
+}
+
+#header
+{
+    margin-bottom: 10px;
+    zoom: 1; /* IE hasLayout fix */
+}
+
+/* =PANES
+------------------------------------------------------- */
+
+.pane
+{
+    background-color: #436689;
+    color: #FFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 13px;
+    margin-bottom: 10px;
+    padding: 3px;
+}
+
+.inner-pane
+{
+    background: #FFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #000;
+    padding: 10px 16px 8px 9px;
+}
+
+.info-pane
+{
+    background: #FFF;
+    border: 1px solid #42678B;
+    color: #000;
+    min-height: 50px;
+    padding: 8px;
+}
+
+h2
+{
+    color: #42678B;
+    font-size: 1.4em;
+    margin-bottom: 7px;
+    margin-left: 10px;
+}
+
+.pane h2, .pane h3
+{
+    color: #FFF;
+    font-size: 1.2em;
+    margin: 6px 11px 7px;
+}
+
+.footnote
+{
+    font-size: 0.8em;
+}
+
+.option-list
+{
+    border-top: 1px dashed #436689;
+    font-weight: normal;
+    padding: 10px;
+    zoom: 1; /* IE hasLayout bug fix */
+}
+
+.option-list li
+{
+    float: left;
+    margin: 0 0 5px 3%;
+    width: 46%;
+}
+
+.efc-summary .amount
+{
+    width: auto;
+}
+
+/* =TABLES
+------------------------------------------------------- */
+
+table
+{
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+th
+{
+    font-size: 1.1em;
+    text-align: left;
+    padding-bottom: 4px;
+}
+
+td
+{
+    background: url(../images/dot.gif) repeat-x 10px 13px;
+    padding: 3px 0 0 0;
+    vertical-align: top;
+}
+
+td.amount
+{
+    padding: 0 0 0 20px;
+}
+
+table tr:first-child td.amount
+{
+    padding: 0 0 0 5px;
+}
+
+td.amount .sign
+{
+    padding-right: 9px;
+}
+
+th.amount, .highlight td.amount
+{
+    text-align: right;
+}
+
+.amount
+{
+    background-image: none;
+    width: 30%;
+}
+
+.amount-title
+{
+    background: #FFF;
+    padding: 0 3px 0 21px;
+}
+
+.over-time
+{
+    font-size: 0.72em;
+    font-weight: normal;
+}
+
+.desc
+{
+    font-size: 0.75em;
+    font-weight: normal;
+}
+
+.highlight .inner-pane
+{
+    color: #42678B;
+    font-weight: bold;
+}
+
+.highlight td
+{
+    background-image: none;
+    font-size: 1.45em;
+    padding: 0;
+}
+
+.highlight .desc
+{
+    display: block;
+    font-size: 0.55em;
+    font-weight: normal;
+}
+
+.highlight .amount-title, table.list .amount-title
+{
+    padding-left: 0;
+}
+
+.highlight .amount
+{
+    font-size: 1.1em;
+}
+
+.efc-summary .inner-pane
+{
+    color: #000;
+    padding: 0;
+}
+
+.efc-summary td, .efc-summary table tr:first-child td.amount
+{
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.efc-summary .desc
+{
+    font-size: 0.75em;
+}
+
+/* =SIDEBAR
+------------------------------------------------------- */
+
+#sidebar-wrapper
+{
+    float: right;
+    font-size: 0.975em;
+    line-height: 1.2;
+    width: 228px;
+}
+
+#sidebar
+{
+    background: #437278;
+    color: #FFF;
+    overflow: hidden; /* IE margin bug fix */
+    padding: 5px;
+    width: 218px; /* IE margin bug fix */
+}
+
+#sidebar h2
+{
+    color: #FFF;
+    font-size: 1.1em;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.sidebar-info-wrapper
+{
+    clear: both;
+    padding: 10px 5px;
+    zoom: 1; /* IE hasLayout fix */
+}
+
+.sidebar-info
+{
+    background-repeat: no-repeat;
+    margin: 7px;
+    zoom: 1; /* IE hasLayout fix */
+}
+
+.info-grad-rate .sidebar-info
+{
+    background-image: url(../images/icon_hat.png);
+    background-position: top right;
+}
+
+.info-grad-rate .sidebar-content
+{
+    width: 70%;
+}
+
+.info-loan-rate
+{
+    border: 1px dotted #A1B9BC;
+    border-width: 1px 0;
+}
+
+.info-loan-rate .sidebar-info
+{
+    background-image: url(../images/icon_percentage.png);
+}
+
+.info-loan-rate .sidebar-content
+{
+    float: right;
+    width: 65%;
+}
+
+.info-median-borrowing .sidebar-info
+{
+    background-image: url(../images/icon_dollar.png);
+    background-position: top right;
+}
+
+.info-median-borrowing .sidebar-content
+{
+    width: 70%;
+}
+
+#sidebar-wrapper .info-pane h2
+{
+    color: #42768B;
+    font-size: 1.1em;
+    margin-left: 0;
+    text-decoration: underline;
+}
+
+.address
+{
+    line-height: 1.5em;
+}
+
+.address-title
+{
+    font-weight: bold;
+}
+
+#sidebar-wrapper .address h2
+{
+    font-size: 1em;
+}
+
+/* =CHARTS
+------------------------------------------------------- */
+
+.percentage
+{
+    background: url(../images/percentage_back.png) no-repeat;
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    height: 24px;
+    margin-bottom: 2px;
+    padding-top: 4px;
+    text-align: center;
+    width: 30px;
+}
+
+.scale ol
+{
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    width: 100%;
+}
+
+.scale li
+{
+    background: #FFF;
+    color: #436689;
+    float: left;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    width: 64px;
+}
+
+.scale li.first
+{
+    -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+    margin-right: 1px;
+}
+
+.scale li.last
+{
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    margin-left: 1px;
+}
+
+.bar-chart-wrapper
+{
+    clear: both;
+    padding-top: 15px;
+}
+
+.bar-chart
+{
+    float: left;
+    margin: 0 13px 0 14px;
+    width: 70px;
+    display: inline; /* IE double margin bug fix */
+}
+
+.bar-chart .title
+{
+    border-top: 1px solid #FFF;
+    display: block;
+    font-size: 0.9em;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.bar-chart .percentage
+{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.bar-chart .bar
+{
+    background: #FFF;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    display: block;
+    margin: 3px auto 0;
+    width: 50px;
+}
+
+.bar-chart-national .percentage
+{
+    background-image: url(../images/percentage_back_alt.png);
+	color: #000;
+}
+
+.bar-chart-national .bar
+{
+    background: none;
+    border: 2px solid #FFF;
+    border-bottom-width: 0;
+    width: 46px;
+}
+
+/* =MODAL
+------------------------------------------------------- */
+
+.modal
+{
+    background: #FFF;
+    border: 3px solid #000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 30px #20374F;
+    -webkit-box-shadow: 0 0 30px #20374F;
+    box-shadow: 0 0 30px #20374F;
+    display: none;
+    left: 150px;
+    padding: 10px;
+    position: absolute;
+    top: 70px;
+}
+
+.modal .header
+{
+    margin-bottom: 10px;
+    width: 506px; /* IE width bug fix */
+    zoom: 1; /* IE width bug fix */
+}
+
+.modal h2
+{
+    float: left;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 3px 0 0 3px;
+}
+
+.modal .close
+{
+    background: #436689;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFF;
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 3px 5px 1px;
+    text-decoration: none;
+}
+
+#modal-download-xml textarea
+{
+    border: 1px solid #CCC;
+    height: 500px;
+    width: 500px;
+}
+
+/* =GLOSSARY
+------------------------------------------------------- */
+
+dt
+{
+	display: block;
+	float: left;
+	font-weight: bold;
+	padding-right: 0.3em;
+}
+
+dd
+{
+	margin: 0 0 1em 0;
+}
+
+/* =PRINT
+------------------------------------------------------- */
+
+@media print
+{
+    *
+    {
+        background: transparent !important;
+        color: #000 !important;
+    }
+    
+    .sidebar-content
+    {
+        float: none !important;
+        width: 100% !important;
+    }
+    
+    .bar
+    {
+        border: 2px solid #000 !important;
+        border-bottom-width: 0 !important;
+        width: 46px !important;
+    }
+    
+    .bar-chart .title
+    {
+        border-color: #000 !important;
+    }
+    
+    .option-list
+    {
+        border-color: #000 !important;
+    }
+    
+    .info-pane
+    {
+        border-color: #000 !important;
+    }
+    
+    .download-btn
+    {
+        display: none !important;
+    }
+    
+    .percentage
+    {
+        border: 1px solid #000;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        height: auto;
+        padding: 5px 0 !important;
+    }
+    
+    .scale li
+    {
+        border: 1px solid #000 !important;
+        width: 62px !important;
+    }
+}
