@@ -5,7 +5,7 @@ An open-source web template for the Financial Aid Shopping Sheet. This template 
 
 __This project is neither endorsed by nor affiliated with the Department of Education.__
 
-This template also includes the [2014-15 updates](http://ifap.ed.gov/dpcletters/GEN1326.html).
+This template also includes the [2015-16 updates](http://www.ifap.ed.gov/eannouncements/022415FinancialAidShoppingSheet20152016.html).
 
 ## Background
 
@@ -60,7 +60,7 @@ declarations located at the top of the `main.css` file under the respective "Loa
 
 ## Copyright
 
-Copyright © 2014. The Regents of the University of California. All rights reserved.
+Copyright &copy; 2014. The Regents of the University of California. All rights reserved.
 
 ## License
 
