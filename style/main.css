@@ -216,7 +216,7 @@ h2
 {
     border-top: 1px dashed #436689;
     font-weight: normal;
-    padding: 10px;
+    padding: 10px 10px 0;
     zoom: 1; /* IE hasLayout bug fix */
 }
 
@@ -230,6 +230,11 @@ h2
 .efc-summary .amount
 {
     width: auto;
+}
+
+.efc-summary .footnote
+{
+    padding: 0 10px 10px;
 }
 
 /* =TABLES
@@ -645,40 +650,40 @@ dd
         background: transparent !important;
         color: #000 !important;
     }
-    
+
     .sidebar-content
     {
         float: none !important;
         width: 100% !important;
     }
-    
+
     .bar
     {
         border: 2px solid #000 !important;
         border-bottom-width: 0 !important;
         width: 46px !important;
     }
-    
+
     .bar-chart .title
     {
         border-color: #000 !important;
     }
-    
+
     .option-list
     {
         border-color: #000 !important;
     }
-    
+
     .info-pane
     {
         border-color: #000 !important;
     }
-    
+
     .download-btn
     {
         display: none !important;
     }
-    
+
     .percentage
     {
         border: 1px solid #000;
@@ -688,7 +693,7 @@ dd
         height: auto;
         padding: 5px 0 !important;
     }
-    
+
     .scale li
     {
         border: 1px solid #000 !important;
