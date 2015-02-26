@@ -60,7 +60,7 @@ declarations located at the top of the `main.css` file under the respective "Loa
 
 ## Copyright
 
-Copyright � 2014. The Regents of the University of California. All rights reserved.
+Copyright &copy; 2014. The Regents of the University of California. All rights reserved.
 
 ## License
 
