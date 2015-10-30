@@ -7,6 +7,8 @@ __This project is neither endorsed by nor affiliated with the Department of Educ
 
 This template also includes the [2015-16 updates](http://www.ifap.ed.gov/eannouncements/022415FinancialAidShoppingSheet20152016.html).
 
+[View the template](http://ucsbfinaid.github.io/Shopping-Sheet/).
+
 ## Background
 
 On July 24, 2012, the Obama administration [introduced the Shopping Sheet](http://www.whitehouse.gov/the-press-office/2012/07/24/fact-sheet-administration-releases-final-version-financial-aid-shopping-),
