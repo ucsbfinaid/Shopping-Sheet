@@ -4,19 +4,35 @@
 /* Graduation Rate Percentage */
 .scale .percentage
 {
-    /* Max Value: 164px; */
-    margin-left: 125px;
+    /* Max Value: 85%; */
+
+    /*
+    Treat 85% as 100% to calculate the appropriate values. In other words, if
+    you wanted to set this value to 71%, you would use the following formula:
+    (71 * 85)/100 = 60.35%
+    */
+
+    margin-left: 60%;
 }
+
+/* Loan Default Rate Bar Charts */
+
+/*
+When adjusting these charts, both the "padding-top" and "height" values below
+must equal "3.875em". Increasing the "padding-top" will push down on the
+chart, while decreasing the value will pull up on the chart. In either case,
+you will also need to adjust the "height" to re-align the chart.
+*/
 
 /* Loan Default Rate Bar Chart: Institution */
 .bar-chart-institution
 {
-    padding-top: 12px;
+    padding-top: 0.75em;
 }
 
 .bar-chart-institution .bar
 {
-    height: 50px;
+    height: 3.125em;
 }
 
 /* Loan Default Rate Bar Chart: National */
@@ -27,7 +43,7 @@
 
 .bar-chart-national .bar
 {
-    height: 60px;
+    height: 3.875em;
 }
 
 /* =RESET
@@ -35,8 +51,8 @@
 
 html, body, h1, table, ul
 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* =CLEARFIXES
@@ -44,7 +60,7 @@ html, body, h1, table, ul
 
 .pane, .option-list, .sidebar-info, .scale, .modal .header
 {
-    overflow: auto;
+  overflow: auto;
 }
 
 /* =GLOBAL
@@ -52,17 +68,17 @@ html, body, h1, table, ul
 
 html, body
 {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 a
 {
-    color: #000;
+  color: #000;
 }
 
 p
 {
-    margin: 0.5em 0;
+  margin: 0.5em 0;
 }
 
 /* =STRUCTURE
@@ -70,92 +86,80 @@ p
 
 #container
 {
-    font-size: 0.6875em;
-    margin: 8px auto;
-    overflow: auto;
-    position: relative;
-    width: 800px;
-}
-
-#main
-{
-    float: left;
-    width: 557px;
+  font-size: 1em;
+  margin: 0.5em;
+  overflow: auto;
+  position: relative;
 }
 
 .footer
 {
-   clear: both;
-   margin-bottom: 20px;
-   zoom: 1; /* IE hasLayout bug fix */
+  clear: both;
 }
 
 /* =HEADER
 ------------------------------------------------------- */
 
-.title-wrapper
-{
-    margin: 16px 0 0 17px;
-}
-
 h1
 {
-    font-size: 1.636363636363636em;
-    font-weight: normal;
-    margin-bottom: 4px;
-    padding: 16px 0 0 0;
+  font-size: 1.125em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0.625em 0 0 0;
 }
 
 .logo
 {
-    float: left;
-    margin: 0 9px 0 0;
+  float: left;
+  margin-right: 0.625em;
 }
 
 .name
 {
-    font-weight: bold;
+  font-size: 0.6875em;
+  font-weight: bold;
 }
 
 .date
 {
-    float: right;
-    font-size: 0.8181818181818182em;
-    font-weight: bold;
-    margin: 8px 9px 0 0;
+  float: right;
+  font-size: 0.5625em;
+  font-weight: bold;
 }
 
 .download-btn
 {
-    background: #FFF url(../images/download.gif) no-repeat 7px 4px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    color: #555;
-    display: block;
-    float: right;
-    font-weight: bold;
-    line-height: 1.1em;
-    margin: 0 9px 4px 0;
-    padding: 4px 6px 5px 27px;
-    text-decoration: none;
+  background: #FFF url(../images/download.gif) no-repeat 0.75em;
+  border-radius: 0.4em;
+  color: #555;
+  display: block;
+  font-size: 0.7em;
+  font-weight: bold;
+  line-height: 1.1em;
+  padding: 0.4em 0.5em 0.4em 2.27em;
+  text-decoration: none;
 }
 
 .download-btn:hover
 {
-    background-image: url(../images/download_hover.gif);
-    color: #D07236;
+  background-image: url(../images/download_hover.gif);
+  color: #D07236;
 }
 
 #download-xml
 {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #header
 {
-    margin-bottom: 10px;
-    zoom: 1; /* IE hasLayout fix */
+  padding: 0.6875em 1.3125em 0.9em 1.25em;
+  margin-bottom: 0.9375em;
+}
+
+.title-wrapper
+{
+  margin: 0.4em 0 0 0;
 }
 
 /* =PANES
@@ -165,22 +169,17 @@ h1
 {
     background-color: #436689;
     color: #FFF;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    margin-bottom: 13px;
-    margin-bottom: 10px;
-    padding: 3px;
+    border-radius: 0.3125em;
+    margin-bottom: 0.625em;
+    padding: 0.1875em;
 }
 
 .inner-pane
 {
     background: #FFF;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 0.3125em;
     color: #000;
-    padding: 10px 16px 8px 9px;
+    padding: 0.625em 1em 0.5em 0.5625em;
 }
 
 .info-pane
@@ -188,43 +187,58 @@ h1
     background: #FFF;
     border: 1px solid #42678B;
     color: #000;
-    min-height: 50px;
-    padding: 8px;
+    min-height: 3.125em;
+    padding: 0.5em;
+}
+
+.info-pane p
+{
+  font-size: 0.6875em;
+  line-height: 2em;
 }
 
 h2
 {
     color: #42678B;
-    font-size: 1.4em;
-    margin-bottom: 7px;
-    margin-left: 10px;
+    font-size: 0.9375em;
+    margin-bottom: 0.4375em;
+    margin-left: 0.625em;
+}
+
+h3
+{
+  font-size: 0.8125em;
 }
 
 .pane h2, .pane h3
 {
     color: #FFF;
-    font-size: 1.2em;
-    margin: 6px 11px 7px;
+    margin: 0.5em 0.85em 0.6em;
+}
+
+.pane h2
+{
+  font-size: 0.8125em;
 }
 
 .footnote
 {
-    font-size: 0.8em;
+    font-size: 0.5625em;
 }
 
 .option-list
 {
     border-top: 1px dashed #436689;
     font-weight: normal;
-    padding: 10px 10px 0;
+    margin: 0;
+    padding: 0.625em 0 0 0.75em;
     zoom: 1; /* IE hasLayout bug fix */
 }
 
 .option-list li
 {
-    float: left;
-    margin: 0 0 5px 3%;
-    width: 46%;
+  font-size: 0.6875em;
+  margin: 0 0 0.3125em 3%;
 }
 
 .efc-summary .amount
@@ -235,7 +249,7 @@ h2
 .efc-summary .footnote
 {
     font-weight: normal;
-    padding: 0 10px 10px;
+    padding: 0 0.625em 1em 1em;
 }
 
 /* =TABLES
@@ -243,42 +257,43 @@ h2
 
 table
 {
-    margin-bottom: 2px;
+    margin-bottom: 0.125em;
     width: 100%;
 }
 
 th
 {
-    font-size: 1.1em;
+    font-size: 0.75em;
     text-align: left;
-    padding-bottom: 4px;
+    padding-bottom: 0.25em;
 }
 
 td
 {
-    background: url(../images/dot.gif) repeat-x 10px 13px;
-    padding: 3px 0 0 0;
+    background: url(../images/dot.gif) repeat-x 0.625em 0.8125em;
+    padding: 0;
     vertical-align: top;
 }
 
 td.amount
 {
-    padding: 0 0 0 20px;
+    padding: 0 0 0 1.25em;
 }
 
 table tr:first-child td.amount
 {
-    padding: 0 0 0 5px;
+    padding: 0 0 0 0.3125em;
 }
 
 td.amount .sign
 {
-    padding-right: 9px;
+    padding-right: 0.5625em;
 }
 
 th.amount, .highlight td.amount
 {
-    text-align: right;
+  font-size: 0.75em;
+  text-align: right;
 }
 
 .amount
@@ -287,10 +302,16 @@ th.amount, .highlight td.amount
     width: 30%;
 }
 
+td.amount
+{
+  font-size: 0.6875em;
+}
+
 .amount-title
 {
     background: #FFF;
-    padding: 0 3px 0 21px;
+    font-size: 0.6875em;
+    padding: 0 0.1875em 0 2em;
 }
 
 .over-time
@@ -301,14 +322,20 @@ th.amount, .highlight td.amount
 
 .desc
 {
-    font-size: 0.75em;
-    font-weight: normal;
+  display: block;
+  font-size: 0.75em;
+  font-weight: normal;
 }
 
 .highlight .inner-pane
 {
     color: #42678B;
     font-weight: bold;
+}
+
+.highlight .inner-pane .amount-title
+{
+    display: block;
 }
 
 .highlight td
@@ -321,7 +348,7 @@ th.amount, .highlight td.amount
 .highlight .desc
 {
     display: block;
-    font-size: 0.55em;
+    font-size: 0.388em;
     font-weight: normal;
 }
 
@@ -343,13 +370,22 @@ th.amount, .highlight td.amount
 
 .efc-summary td, .efc-summary table tr:first-child td.amount
 {
-    font-size: 1.1em;
-    padding: 10px;
+    padding: 0.625em;
+}
+
+.efc-summary td
+{
+    font-size: 1em;
+}
+
+.efc-summary td .amount-title
+{
+    font-size: 0.75em;
 }
 
 .efc-summary .desc
 {
-    font-size: 0.75em;
+    font-size: 0.5625em;
 }
 
 /* =SIDEBAR
@@ -360,7 +396,6 @@ th.amount, .highlight td.amount
     float: right;
     font-size: 0.975em;
     line-height: 1.2;
-    width: 228px;
 }
 
 #sidebar
@@ -368,14 +403,13 @@ th.amount, .highlight td.amount
     background: #437278;
     color: #FFF;
     overflow: hidden; /* IE margin bug fix */
-    padding: 5px;
-    width: 218px; /* IE margin bug fix */
+    padding: 0.3125em;
 }
 
 #sidebar h2
 {
     color: #FFF;
-    font-size: 1.1em;
+    font-size: 0.75em;
     margin: 0;
     text-decoration: underline;
 }
@@ -383,14 +417,14 @@ th.amount, .highlight td.amount
 .sidebar-info-wrapper
 {
     clear: both;
-    padding: 10px 5px;
+    padding: 0.625em 0.3125em;
     zoom: 1; /* IE hasLayout fix */
 }
 
 .sidebar-info
 {
     background-repeat: no-repeat;
-    margin: 7px;
+    margin: 0.4375em;
     zoom: 1; /* IE hasLayout fix */
 }
 
@@ -436,12 +470,12 @@ th.amount, .highlight td.amount
 #sidebar-wrapper .info-pane h2
 {
     color: #42768B;
-    font-size: 1.1em;
+    font-size: 0.75em;
     margin-left: 0;
     text-decoration: underline;
 }
 
-.address
+.address p
 {
     line-height: 1.5em;
 }
@@ -453,7 +487,12 @@ th.amount, .highlight td.amount
 
 #sidebar-wrapper .address h2
 {
-    font-size: 1em;
+    font-size: 0.6875em;
+}
+
+.sidebar-content p
+{
+  font-size: 0.6875em;
 }
 
 /* =CHARTS
@@ -463,19 +502,19 @@ th.amount, .highlight td.amount
 {
     background: url(../images/percentage_back.png) no-repeat;
     display: block;
-    font-size: 0.8em;
+    font-size: 0.5625em;
     font-weight: bold;
-    height: 24px;
-    margin-bottom: 2px;
-    padding-top: 4px;
+    height: 2.8em;
+    margin-bottom: 0.125em;
+    padding-top: 0.6em;
     text-align: center;
-    width: 30px;
+    width: 3.3em;
 }
 
 .scale ol
 {
     list-style: none;
-    margin: 0 0 10px 0;
+    margin: 0 0 0.625em 0;
     padding: 0;
     width: 100%;
 }
@@ -485,42 +524,42 @@ th.amount, .highlight td.amount
     background: #FFF;
     color: #436689;
     float: left;
-    font-size: 0.8em;
+    font-size: 0.5625em;
     font-weight: bold;
     padding: 0;
     margin: 0;
-    padding: 5px 0;
+    padding: 0.7em 0;
     text-align: center;
-    width: 64px;
+    width: 33%;
 }
 
 .scale li.first
 {
-    -moz-border-radius: 5px 0 0 5px;
-    -webkit-border-radius: 5px 0 0 5px;
-    border-radius: 5px 0 0 5px;
-    margin-right: 1px;
+    -moz-border-radius: 0.3125em 0 0 0.3125em;
+    -webkit-border-radius: 0.3125em 0 0 0.3125em;
+    border-radius: 0.3125em 0 0 0.3125em;
+    margin-right: 0.0625em;
 }
 
 .scale li.last
 {
-    -moz-border-radius: 0 5px 5px 0;
-    -webkit-border-radius: 0 5px 5px 0;
-    border-radius: 0 5px 5px 0;
-    margin-left: 1px;
+    -moz-border-radius: 0 0.3125em 0.3125em 0;
+    -webkit-border-radius: 0 0.3125em 0.3125em 0;
+    border-radius: 0 0.3125em 0.3125em 0;
+    margin-left: 0.0625em;
 }
 
 .bar-chart-wrapper
 {
     clear: both;
-    padding-top: 15px;
+    padding-top: 0.9375em;
 }
 
 .bar-chart
 {
     float: left;
-    margin: 0 13px 0 14px;
-    width: 70px;
+    margin: 0 7.5%;
+    width: 35%;
     display: inline; /* IE double margin bug fix */
 }
 
@@ -528,14 +567,13 @@ th.amount, .highlight td.amount
 {
     border-top: 1px solid #FFF;
     display: block;
-    font-size: 0.9em;
-    padding-top: 5px;
+    font-size: 0.5625em;
+    padding-top: 0.3125em;
     text-align: center;
 }
 
 .bar-chart .percentage
 {
-    font-size: 0.8em;
     font-weight: bold;
     margin: 0 auto;
 }
@@ -543,86 +581,92 @@ th.amount, .highlight td.amount
 .bar-chart .bar
 {
     background: #FFF;
-    -moz-border-radius: 3px 3px 0 0;
-    -webkit-border-radius: 3px 3px 0 0;
-    border-radius: 3px 3px 0 0;
+    -moz-border-radius: 0.1875em 0.1875em 0 0;
+    -webkit-border-radius: 0.1875em 0.1875em 0 0;
+    border-radius: 0.1875em 0.1875em 0 0;
     display: block;
-    margin: 3px auto 0;
-    width: 50px;
+    margin: 0.1875em auto 0;
+    width: 3.125em;
 }
 
 .bar-chart-national .percentage
 {
-    background-image: url(../images/percentage_back_alt.png);
+  background-image: url(../images/percentage_back_alt.png);
 	color: #000;
 }
 
 .bar-chart-national .bar
 {
     background: none;
-    border: 2px solid #FFF;
+    border: 0.125em solid #FFF;
     border-bottom-width: 0;
-    width: 46px;
+    width: 2.875em;
 }
 
 /* =MODAL
 ------------------------------------------------------- */
 
+.modal-wrapper
+{
+    display: none;
+    position: absolute;
+    top: 1%;
+    width: 100%;
+}
+
 .modal
 {
     background: #FFF;
-    border: 3px solid #000;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -moz-box-shadow: 0 0 30px #20374F;
-    -webkit-box-shadow: 0 0 30px #20374F;
-    box-shadow: 0 0 30px #20374F;
-    display: none;
-    left: 150px;
-    padding: 10px;
-    position: absolute;
-    top: 70px;
+    border: 0.1875em solid #000;
+    -moz-border-radius: 0.3125em;
+    -webkit-border-radius: 0.3125em;
+    -moz-border-radius: 0.3125em;
+    -webkit-border-radius: 0.3125em;
+    border-radius: 0.3125em;
+    -moz-box-shadow: 0 0 1.875em #20374F;
+    -webkit-box-shadow: 0 0 1.875em #20374F;
+    box-shadow: 0 0 1.875em #20374F;
+    margin: 0 auto;
+    padding: 0.625em;
+    width: 80%;
+    max-width: 30em;
 }
 
 .modal .header
 {
-    margin-bottom: 10px;
-    width: 506px; /* IE width bug fix */
+    margin-bottom: 0.625em;
     zoom: 1; /* IE width bug fix */
 }
 
 .modal h2
 {
     float: left;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0;
-    padding: 3px 0 0 3px;
+    padding: 0.1875em 0 0 0.1875em;
 }
 
 .modal .close
 {
     background: #436689;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    -moz-border-radius: 0.3125em;
+    -webkit-border-radius: 0.3125em;
+    -moz-border-radius: 0.3125em;
+    -webkit-border-radius: 0.3125em;
+    border-radius: 0.3125em;
     color: #FFF;
     float: right;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
-    padding: 3px 5px 1px;
+    padding: 0.1875em 0.3125em 0.0625em;
     text-decoration: none;
 }
 
 #modal-download-xml textarea
 {
     border: 1px solid #CCC;
-    height: 500px;
-    width: 500px;
+    height: 31.25em;
+    width: 100%;
 }
 
 /* =GLOSSARY
@@ -630,15 +674,58 @@ th.amount, .highlight td.amount
 
 dt
 {
-	display: block;
 	float: left;
+  font-size: 0.75em;
 	font-weight: bold;
+  margin-bottom: -1em;
 	padding-right: 0.3em;
 }
 
 dd
 {
+  font-size: 0.6875em;
 	margin: 0 0 1em 0;
+}
+
+/* =RESPONSIVE
+------------------------------------------------------- */
+
+@media (min-width: 51.875em)
+{
+  #container
+  {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50em;
+  }
+
+  .download-btn
+  {
+    float: right;
+  }
+
+  #main
+  {
+    float: left;
+    width: 69.625%;
+  }
+
+  #sidebar-wrapper
+  {
+    float: right;
+    width: 28.5%;
+  }
+
+  .option-list li
+  {
+    float: left;
+    width: 45%;
+  }
+
+  .desc
+  {
+    display: inline;
+  }
 }
 
 /* =PRINT
@@ -646,58 +733,8 @@ dd
 
 @media print
 {
-    *
-    {
-        background: transparent !important;
-        color: #000 !important;
-    }
-
-    .sidebar-content
-    {
-        float: none !important;
-        width: 100% !important;
-    }
-
-    .bar
-    {
-        border: 2px solid #000 !important;
-        border-bottom-width: 0 !important;
-        width: 46px !important;
-    }
-
-    .bar-chart .title
-    {
-        border-color: #000 !important;
-    }
-
-    .option-list
-    {
-        border-color: #000 !important;
-    }
-
-    .info-pane
-    {
-        border-color: #000 !important;
-    }
-
     .download-btn
     {
         display: none !important;
-    }
-
-    .percentage
-    {
-        border: 1px solid #000;
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-        border-radius: 3px;
-        height: auto;
-        padding: 5px 0 !important;
-    }
-
-    .scale li
-    {
-        border: 1px solid #000 !important;
-        width: 62px !important;
     }
 }
