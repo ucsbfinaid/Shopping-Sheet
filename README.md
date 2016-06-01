@@ -37,7 +37,7 @@ Specifically, performance was improved by the following metrics:
 
 * __Size of HTML file reduced__ by __57%__ (from 41.5 KB to 17.7 KB)
 * __Total number of images reduced__ by __78%__ (from 42 to 9)
-* __Total size of website reduced__ by __50%__ (from 95.7 KB to 46.9 KB)
+* __Total size of website reduced__ by __50%__ (from 95.7 KB to 47 KB)
 
 This repository itself also provides an open forum for people to suggest continued improvements to the template and also allows
 developers to further extend the template.

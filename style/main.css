@@ -148,8 +148,10 @@ h1
 .download-btn
 {
   background: #FFF url(../images/download.gif) no-repeat 0.75em;
+  border: 0;
   border-radius: 0.4em;
   color: #555;
+  cursor: pointer;
   display: block;
   font-size: 0.7em;
   font-weight: bold;
@@ -671,8 +673,10 @@ table tr.intro-row td.amount
     -webkit-border-radius: 0.3125em;
     -moz-border-radius: 0.3125em;
     -webkit-border-radius: 0.3125em;
+    border: 0;
     border-radius: 0.3125em;
     color: #FFF;
+    cursor: pointer;
     float: right;
     font-size: 1em;
     font-weight: bold;
