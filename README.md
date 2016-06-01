@@ -17,7 +17,7 @@ a tool to help students better understand and compare the costs of attending col
 the new Shopping Sheet.
 
 On September 28, 2012, the Department of Education provided a [HTML template](http://ifap.ed.gov/eannouncements/092812ImplementoftheFinancialAidShopSheet.html)
-that could be used by instutitons to display the Shopping Sheet on their website.
+that could be used by institutions to display the Shopping Sheet on their website.
 
 ## Why Create This Template?
 
@@ -36,7 +36,7 @@ this open-source template builds and improves upon this template, including:
 Specifically, performance was improved by the following metrics:
 
 * __Size of HTML file reduced__ by __57%__ (from 41.5 KB to 17.7 KB)
-* __Total number of images reduced__ by __78% __(from 42 to 9)
+* __Total number of images reduced__ by __78%__ (from 42 to 9)
 * __Total size of website reduced__ by __50%__ (from 95.7 KB to 46.9 KB)
 
 This repository itself also provides an open forum for people to suggest continued improvements to the template and also allows
