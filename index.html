@@ -31,14 +31,12 @@
                 <div class="inner-pane">
 
                     <table>
-                        <thead>
-                            <tr>
-                                <th>Estimated Cost of Attendance</th>
-                                <th class="amount">$<span id="value-total-estimated-cost">X,XXX</span> <span class="over-time">/ yr</span></th>
-                            </tr>
-                        </thead>
                         <tbody>
-                            <tr>
+                            <tr class="total-row">
+                                <td>Estimated Cost of Attendance</td>
+                                <td class="amount">$<span id="value-total-estimated-cost">X,XXX</span> <span class="over-time">/ yr</span></td>
+                            </tr>
+                            <tr class="intro-row">
                                 <td><span class="amount-title">Tuition and fees</span></td>
                                 <td class="amount"><span class="sign">$</span><span id="value-tuition-and-fees">X,XXX</span></td>
                             </tr>
@@ -69,17 +67,15 @@
                 <div class="inner-pane">
 
                     <table>
-                        <thead>
-                            <tr>
-                                <th>
+                        <tbody>
+                            <tr class="total-row">
+                                <td>
                                     Total Grants and Scholarships
                                     <span class="desc">("Gift" Aid; no repayment needed)</span>
-                                </th>
-                                <th class="amount">$<span id="value-total-grants-and-scholarships">X,XXX</span> <span class="over-time">/ yr</span></th>
+                                </td>
+                                <td class="amount">$<span id="value-total-grants-and-scholarships">X,XXX</span> <span class="over-time">/ yr</span></td>
                             </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
+                            <tr class="intro-row">
                                 <td><span class="amount-title">Grants and scholarships from your school</span></td>
                                 <td class="amount"><span class="sign">$</span><span id="value-grants">X,XXX</span></td>
                             </tr>
@@ -128,7 +124,7 @@
 
                     <table class="list">
                         <tbody>
-                            <tr>
+                            <tr class="intro-row">
                                 <td><span class="amount-title">Work-study (Federal, state, or institutional)</span></td>
                                 <td class="amount"><span class="sign">$</span><span id="value-work-study">X,XXX</span></td>
                             </tr>
@@ -144,7 +140,7 @@
 
                     <table class="list">
                         <tbody>
-                            <tr>
+                            <tr class="intro-row">
                                 <td><span class="amount-title">Federal Perkins Loan</span></td>
                                 <td class="amount"><span class="sign">$</span><span id="value-federal-perkins-loan">X,XXX</span></td>
                             </tr>
@@ -168,7 +164,7 @@
             </div>
 
             <div class="pane highlight efc-summary">
-                <h2>Other options</h2>
+                <h3>Other options</h3>
                 <div class="inner-pane">
 
                     <table>
@@ -413,6 +409,7 @@
                   <h2>XML Output</h2>
                   <a id="close-output-xml" class="close" href="#">X</a>
               </div>
+              <label for="xml-output">XML Output</label>
               <textarea id="xml-output"></textarea>
           </div>
         </div>

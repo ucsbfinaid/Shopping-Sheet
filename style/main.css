@@ -68,6 +68,19 @@ html, body, h1, table, ul
   overflow: auto;
 }
 
+/* =ACCESSIBILITY
+------------------------------------------------------- */
+
+#modal-download-xml label
+{
+  height: 1px;
+  left: -1000%;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
 /* =GLOBAL
 ------------------------------------------------------- */
 
@@ -266,13 +279,6 @@ table
     width: 100%;
 }
 
-th
-{
-    font-size: 0.75em;
-    text-align: left;
-    padding-bottom: 0.25em;
-}
-
 td
 {
     background: url(../images/dot.gif) repeat-x 0.625em 0.8125em;
@@ -282,20 +288,21 @@ td
 
 td.amount
 {
+    font-size: 0.6875em;
     padding: 0 0 0 1.25em;
 }
 
-table tr:first-child td.amount
+table tr.intro-row td.amount
 {
     padding: 0 0 0 0.3125em;
 }
 
-td.amount .sign
+.intro-row td.amount .sign
 {
-    padding-right: 0.5625em;
+    padding-right: 0.4em;
 }
 
-th.amount, .highlight td.amount
+.total-row td.amount, .highlight td.amount
 {
   font-size: 0.75em;
   text-align: right;
@@ -305,11 +312,6 @@ th.amount, .highlight td.amount
 {
     background-image: none;
     width: 30%;
-}
-
-td.amount
-{
-  font-size: 0.6875em;
 }
 
 .amount-title
@@ -391,6 +393,15 @@ td.amount
 .efc-summary .desc
 {
     font-size: 0.5625em;
+}
+
+.total-row td
+{
+    background: none;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 0.25em;
 }
 
 /* =SIDEBAR
