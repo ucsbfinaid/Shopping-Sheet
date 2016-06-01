@@ -441,7 +441,7 @@ td.amount
 
 .info-grad-rate .sidebar-content
 {
-    width: 70%;
+    width: 68%;
 }
 
 .info-loan-rate
@@ -470,6 +470,7 @@ td.amount
 
 .info-median-borrowing .sidebar-content
 {
+    min-height: 5em;
     width: 70%;
 }
 

@@ -1,0 +1,56 @@
+.download-btn
+{
+  float: right;
+}
+
+#container
+{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50em;
+}
+
+#main
+{
+  float: left;
+  width: 69.625%;
+}
+
+#sidebar-wrapper
+{
+  float: right;
+  width: 28.5%;
+}
+
+.option-list li
+{
+  float: left;
+  width: 45%;
+}
+
+.desc
+{
+  display: inline;
+}
+
+.title-wrapper
+{
+  margin: 0.4em 0 0 0;
+}
+
+.amount-title
+{
+    padding: 0 0.1875em 0 2em;
+}
+
+dt
+{
+	float: left;
+  margin-bottom: -1em;
+}
+
+.bar-chart
+{
+    margin: 0 7.5%;
+    width: 35%;
+}
