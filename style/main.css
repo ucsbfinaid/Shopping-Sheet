@@ -46,6 +46,11 @@ you will also need to adjust the "height" to re-align the chart.
     height: 3.875em;
 }
 
+@-ms-viewport
+{
+  width: device-width;
+}
+
 /* =RESET
 ------------------------------------------------------- */
 
@@ -159,7 +164,7 @@ h1
 
 .title-wrapper
 {
-  margin: 0.4em 0 0 0;
+  margin: 0.4em 0 0.8em 0;
 }
 
 /* =PANES
@@ -311,7 +316,7 @@ td.amount
 {
     background: #FFF;
     font-size: 0.6875em;
-    padding: 0 0.1875em 0 2em;
+    padding: 0 0.1875em 0 0;
 }
 
 .over-time
@@ -452,7 +457,8 @@ td.amount
 
 .info-loan-rate .sidebar-content
 {
-    float: right;
+    float: left;
+    margin-left: 4.3em;
     width: 65%;
 }
 
@@ -530,7 +536,7 @@ td.amount
     margin: 0;
     padding: 0.7em 0;
     text-align: center;
-    width: 33%;
+    width: 32.9%;
 }
 
 .scale li.first
@@ -538,7 +544,7 @@ td.amount
     -moz-border-radius: 0.3125em 0 0 0.3125em;
     -webkit-border-radius: 0.3125em 0 0 0.3125em;
     border-radius: 0.3125em 0 0 0.3125em;
-    margin-right: 0.0625em;
+    margin-right: 1px;
 }
 
 .scale li.last
@@ -546,7 +552,7 @@ td.amount
     -moz-border-radius: 0 0.3125em 0.3125em 0;
     -webkit-border-radius: 0 0.3125em 0.3125em 0;
     border-radius: 0 0.3125em 0.3125em 0;
-    margin-left: 0.0625em;
+    margin-left: 1px;
 }
 
 .bar-chart-wrapper
@@ -674,10 +680,9 @@ td.amount
 
 dt
 {
-	float: left;
+  display: block;
   font-size: 0.75em;
 	font-weight: bold;
-  margin-bottom: -1em;
 	padding-right: 0.3em;
 }
 
@@ -690,6 +695,20 @@ dd
 /* =RESPONSIVE
 ------------------------------------------------------- */
 
+@media (min-width: 25em)
+{
+  .download-btn
+  {
+    float: right;
+  }
+
+  .bar-chart
+  {
+      margin: 0 15%;
+      width: 20%;
+  }
+}
+
 @media (min-width: 51.875em)
 {
   #container
@@ -697,11 +716,6 @@ dd
     margin-left: auto;
     margin-right: auto;
     max-width: 50em;
-  }
-
-  .download-btn
-  {
-    float: right;
   }
 
   #main
@@ -725,6 +739,28 @@ dd
   .desc
   {
     display: inline;
+  }
+
+  .title-wrapper
+  {
+    margin: 0.4em 0 0 0;
+  }
+
+  .amount-title
+  {
+      padding: 0 0.1875em 0 2em;
+  }
+
+  dt
+  {
+  	float: left;
+    margin-bottom: -1em;
+  }
+
+  .bar-chart
+  {
+      margin: 0 7.5%;
+      width: 35%;
   }
 }
 
