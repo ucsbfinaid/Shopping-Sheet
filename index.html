@@ -3,8 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shopping Sheet</title>
     <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 8]><link href="style/ie.css" rel="stylesheet" type="text/css" /><![endif]-->
 </head>
 <body>
 
@@ -29,14 +31,12 @@
                 <div class="inner-pane">
 
                     <table>
-                        <thead>
-                            <tr>
-                                <th>Estimated Cost of Attendance</th>
-                                <th class="amount">$<span id="value-total-estimated-cost">X,XXX</span> <span class="over-time">/ yr</span></th>
-                            </tr>
-                        </thead>
                         <tbody>
-                            <tr>
+                            <tr class="total-row">
+                                <td>Estimated Cost of Attendance</td>
+                                <td class="amount">$<span id="value-total-estimated-cost">X,XXX</span> <span class="over-time">/ yr</span></td>
+                            </tr>
+                            <tr class="intro-row">
                                 <td><span class="amount-title">Tuition and fees</span></td>
                                 <td class="amount"><span class="sign">$</span><span id="value-tuition-and-fees">X,XXX</span></td>
                             </tr>
@@ -67,17 +67,15 @@
                 <div class="inner-pane">
 
                     <table>
-                        <thead>
-                            <tr>
-                                <th>
+                        <tbody>
+                            <tr class="total-row">
+                                <td>
                                     Total Grants and Scholarships
                                     <span class="desc">("Gift" Aid; no repayment needed)</span>
-                                </th>
-                                <th class="amount">$<span id="value-total-grants-and-scholarships">X,XXX</span> <span class="over-time">/ yr</span></th>
+                                </td>
+                                <td class="amount">$<span id="value-total-grants-and-scholarships">X,XXX</span> <span class="over-time">/ yr</span></td>
                             </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
+                            <tr class="intro-row">
                                 <td><span class="amount-title">Grants and scholarships from your school</span></td>
                                 <td class="amount"><span class="sign">$</span><span id="value-grants">X,XXX</span></td>
                             </tr>
@@ -126,7 +124,7 @@
 
                     <table class="list">
                         <tbody>
-                            <tr>
+                            <tr class="intro-row">
                                 <td><span class="amount-title">Work-study (Federal, state, or institutional)</span></td>
                                 <td class="amount"><span class="sign">$</span><span id="value-work-study">X,XXX</span></td>
                             </tr>
@@ -142,7 +140,7 @@
 
                     <table class="list">
                         <tbody>
-                            <tr>
+                            <tr class="intro-row">
                                 <td><span class="amount-title">Federal Perkins Loan</span></td>
                                 <td class="amount"><span class="sign">$</span><span id="value-federal-perkins-loan">X,XXX</span></td>
                             </tr>
@@ -166,7 +164,7 @@
             </div>
 
             <div class="pane highlight efc-summary">
-                <h2>Other options</h2>
+                <h3>Other options</h3>
                 <div class="inner-pane">
 
                     <table>
@@ -296,9 +294,9 @@
                 </p>
 
                 <p>
-                    123 Main Street
-                    Anytown, ST 12345
-                    Telephone: (123) 456-7890
+                    123 Main Street<br />
+                    Anytown, ST 12345<br />
+                    Telephone: (123) 456-7890<br />
                     E-mail: financialaid@uus.edu
                 </p>
 
@@ -309,7 +307,7 @@
         <div class="footer">
 
             <div class="pane info-pane">
-                Customized information from UUS
+                <p>Customized information from UUS</p>
             </div>
 
         </div>
@@ -400,17 +398,20 @@
         <div class="footer">
 
             <div class="pane info-pane">
-                Customized information from UUS
+                <p>Customized information from UUS</p>
             </div>
 
         </div>
 
-        <div class="modal" id="modal-download-xml">
-            <div class="header">
-                <h2>XML Output</h2>
-                <a id="close-output-xml" class="close" href="#">X</a>
-            </div>
-            <textarea id="xml-output"></textarea>
+        <div class="modal-wrapper" id="modal-download-xml">
+          <div class="modal">
+              <div class="header">
+                  <h2>XML Output</h2>
+                  <a id="close-output-xml" class="close" href="#">X</a>
+              </div>
+              <label for="xml-output">XML Output</label>
+              <textarea id="xml-output"></textarea>
+          </div>
         </div>
 
     </div>

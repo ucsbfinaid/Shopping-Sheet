@@ -24,12 +24,20 @@ that could be used by instutitons to display the Shopping Sheet on their website
 Although the Department of Education already provides a viable [HTML Shopping Sheet template](http://ifap.ed.gov/eannouncements/092812ImplementoftheFinancialAidShopSheet.html),
 this open-source template builds and improves upon this template, including:
 
+* __Responsive, mobile-friendly design__
+* __Semantic markup__ for improved accessibility
 * __Separating CSS and HTML__ for better separation of concerns
 * __Reducing the overall size of the HTML markup__ for improved performance and easier modifiability
 * __Reducing the use of images__ for improved performance and increased control of content through markup and styling
 * __Reducing the file size of the images__ for increased performance
 * __Providing customization instructions__ for easier template customization
 * __Adding a "Download XML" modal dialog__ for better integration of that feature within the interface
+
+Specifically, performance was improved by the following metrics:
+
+* __Size of HTML file reduced__ by __57%__ (from 41.5 KB to 17.7 KB)
+* __Total number of images reduced__ by __78% __(from 42 to 9)
+* __Total size of website reduced__ by __50%__ (from 95.7 KB to 46.9 KB)
 
 This repository itself also provides an open forum for people to suggest continued improvements to the template and also allows
 developers to further extend the template.
@@ -43,7 +51,7 @@ require modifying the CSS declarations within the `main.css` file:
 
 To change the university logo in the header, simply replace the `logo.png` file in the `images` directory. You will also want
 to change the `alt` text of the `img` element that references that image in the `index.html` so that it will be accessible
-to Users with screenreaders.
+to users with screenreaders.
 
 ### Customizing the Text
 
