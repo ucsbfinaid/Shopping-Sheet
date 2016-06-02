@@ -466,6 +466,7 @@ table tr.intro-row td.amount
 .info-loan-rate .sidebar-info
 {
     background-image: url(../images/icon_percentage.png);
+    overflow: hidden;
 }
 
 .info-loan-rate .sidebar-content
