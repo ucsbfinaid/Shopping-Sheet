@@ -5,7 +5,7 @@ An open-source web template for the Financial Aid Shopping Sheet. This template 
 
 __This project is neither endorsed by nor affiliated with the Department of Education.__
 
-This template also includes the [2016-17 updates](http://ifap.ed.gov/eannouncements/011916FinancialAidShoppingSheet20162017.html).
+This template also includes the [2017-18 updates](https://ifap.ed.gov/eannouncements/111416FinancialAidShoppingSheet20172018.html).
 
 [View the template](http://ucsbfinaid.github.io/Shopping-Sheet/).
 
@@ -21,7 +21,7 @@ that could be used by institutions to display the Shopping Sheet on their websit
 
 ## Why Create This Template?
 
-Although the Department of Education already provides a viable [HTML Shopping Sheet template](http://ifap.ed.gov/eannouncements/092812ImplementoftheFinancialAidShopSheet.html),
+Although the Department of Education already provides a viable [HTML Shopping Sheet template](https://ifap.ed.gov/eannouncements/111416FinancialAidShoppingSheet20172018.html),
 this open-source template builds and improves upon this template, including:
 
 * __Responsive, mobile-friendly design__
@@ -30,14 +30,14 @@ this open-source template builds and improves upon this template, including:
 * __Reducing the overall size of the HTML markup__ for improved performance and easier modifiability
 * __Reducing the use of images__ for improved performance and increased control of content through markup and styling
 * __Reducing the file size of the images__ for increased performance
-* __Providing customization instructions__ for easier template customization
+* __Providing simplified customization instructions__ for easier template customization
 * __Adding a "Download XML" modal dialog__ for better integration of that feature within the interface
 
 Specifically, performance was improved by the following metrics:
 
-* __Size of HTML file reduced__ by __57%__ (from 41.5 KB to 17.7 KB)
-* __Total number of images reduced__ by __78%__ (from 42 to 9)
-* __Total size of website reduced__ by __50%__ (from 95.7 KB to 47.1 KB)
+* __Size of HTML file reduced__ by __56%__ (from 40 KB to 17.6 KB)
+* __Total number of images reduced__ by __84%__ (from 46 to 7)
+* __Total size of website reduced__ by __53%__ (from 101 KB to 47.3 KB)
 
 This repository itself also provides an open forum for people to suggest continued improvements to the template and also allows
 developers to further extend the template.
@@ -58,15 +58,17 @@ to users with screenreaders.
 "UUS" and "University of the United States" appear throughout the text. Replace these with the name and acronym for your
 university.
 
-### Customizing Graduation Rate Percentage
+### Customizing Graduation Rate Percentage Marker Position
 
-To adjust the position of the "Graduation Rate" percentage marker, modify the `margin-left` value within the CSS declaration
-located at the top of the `main.css` file under the `Graduation Rate Percentage` comment header.
+To adjust the position of the "Graduation Rate" percentage marker, modify the
+appropriate value at the top of the `main.css` file under the "Graduation Rate Percentage"
+comment header.
 
-### Customizing the Loan Default Rate Bar Chart Height
+### Customizing National Average Repayment Rate Marker Position
 
-To change the height of the "Loan Default Rate" bar charts, adjust the `padding-top` and `height` values within the CSS
-declarations located at the top of the `main.css` file under the respective "Loan Default Rate Bar Chart" comment headers.
+To adjust the position of the "National Average Repayment Rate" percentage marker, modify the
+appropriate values at the top of the `main.css` file under the "Repayment Rate National Average Message Box"
+and "Repayment Rate National Average Message Box Arrow" comment headers.
 
 ## Copyright
 
