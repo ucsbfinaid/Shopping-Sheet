@@ -15,7 +15,7 @@
     margin-left: 60%;
 }
 
-/* Loan Default Rate National Average Bar */
+/* Repayment Rate National Average Bar */
 .bar-chart .overlay-bar
 {
   /* Max Value: 5em; */
@@ -36,7 +36,7 @@
   /* Max Value: 7.3em */
 
   /*
-  Adjust this value along with the "Loan Default Rate National Average Message
+  Adjust this value along with the "Repayment Rate National Average Message
   Box Arrow" below to get the arrow/box correctly positioned
   */
 
@@ -49,7 +49,7 @@
   /* Max Value: 4em */
 
   /*
-  Adjust this value along with the "Loan Default Rate National Average Message
+  Adjust this value along with the "Repayment Rate National Average Message
   Box" above to get the arrow/box correctly positioned
   */
 
