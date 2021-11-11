@@ -9,6 +9,14 @@ This template also includes the [2017-18 updates](https://ifap.ed.gov/eannouncem
 
 [View the template](http://ucsbfinaid.github.io/Shopping-Sheet/).
 
+## Deprecated
+
+**This project is now deprecated.** The "Shopping Sheet" has been renamed to the
+["College Financing Plan"](https://www2.ed.gov/policy/highered/guid/aid-offer/index.html) (CFP)
+and the updated HTML template associated with the CFP includes many of the enhancements that were a part
+of this project (responsive design, semantic markup, fewer images, etc.). As a result, this project
+is no longer necessary.
+
 ## Background
 
 On July 24, 2012, the Obama administration [introduced the Shopping Sheet](http://www.whitehouse.gov/the-press-office/2012/07/24/fact-sheet-administration-releases-final-version-financial-aid-shopping-),
